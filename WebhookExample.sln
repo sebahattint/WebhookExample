@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Api", "Order.Api\Order.Api.csproj", "{4CE1FA5E-5544-4B1E-B4FB-1DA894DC611F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Api", "Order.Api\Order.Api.csproj", "{4CE1FA5E-5544-4B1E-B4FB-1DA894DC611F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Api", "Notification.Api\Notification.Api.csproj", "{B7D82939-9366-4F77-96DB-89264D69A980}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification.Api", "Notification.Api\Notification.Api.csproj", "{B7D82939-9366-4F77-96DB-89264D69A980}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{7C417B79-554B-4071-879F-0CD6D0B2CF78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{91FB1073-673A-4B88-A98E-98D59EF1C7B0}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Users\TheCoded\Desktop\Webhook Example.postman_collection.json = ..\..\..\Users\TheCoded\Desktop\Webhook Example.postman_collection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91FB1073-673A-4B88-A98E-98D59EF1C7B0} = {7C417B79-554B-4071-879F-0CD6D0B2CF78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4CDD9B5E-5C55-494A-97E5-2A1A9ECFED28}
