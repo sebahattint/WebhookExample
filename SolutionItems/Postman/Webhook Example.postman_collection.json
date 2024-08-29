@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "ed071d5a-d4db-4b56-b29c-ea84bb7359fb",
+		"name": "Webhook Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13829520"
+	},
+	"item": [
+		{
+			"name": "Subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"https://localhost:7219/api/notification/send\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7177/api/order/subscribe",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7177",
+					"path": [
+						"api",
+						"order",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"OrderId\":1,\r\n    \"Status\":\"Kargolandı\",\r\n    \"UpdatedDate\":\"2020-10-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7177/api/order/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7177",
+					"path": [
+						"api",
+						"order",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
